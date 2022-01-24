@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список пользователей</title>
+</head>
+<body>
+<h2>Список пользователей</h2>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Email</th>
+    </tr>
+    {% for el in users %}
+    <tr><td>{{ el['id'] }}</td><td>{{ el['name'] }}</td><td>{{ el['last_name'] }}</td><td>{{ el['email_user'] }}</td></tr>
+{% endfor %}
+</table><br>
+
+<A href="/">Вернутся назад</A>
+</body>
+</html>
